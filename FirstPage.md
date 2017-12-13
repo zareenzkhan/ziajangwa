@@ -1,4 +1,4 @@
-![GitHub Logo](/header.jpg)
+ ![GitHub Logo](/header.jpg)
 
 # Background and Motivation
 Our project is motivated by the following facts: 
@@ -23,24 +23,35 @@ A natural cause for many delays seems to be the weather. We decided to include w
 # Prediction
 It most of the time happens that if a flight experience any delay in its departure, it will not be able to reach timely on the destination. So we picked it up as our objective to predict the delay in arrival if the flight is delayed on departure.
 
-## Model
+## Model 1
 We use **Linear Regression Model** to do this prediction.
 
 ## Implementation
-1. We first had to find out the duration of flight by using two features, SCHEDULE_DEPARTURE and SCHEDULE_ARRIVAL.
-2. Other parameter which we already have the DEPARTURE_DELAY in our dataset.
-3. We applied the model on dataset then.
+In this model we used SCHEDULE_TIME to predict ARRIVAL_DELAY.
+
+## Results
+Score on training data is 0.83
+Score on test data is 0.76
+![Image](/flight_dataLR1.png)
+
+## Model 2
+We use **Multiple Linear Regression Model** to do this prediction.
+
+## Implementation
+1. We first find out the duration of flight by using two features, SCHEDULE_DEPARTURE and SCHEDULE_ARRIVAL.
+2. Other parameters which we already have in our dataset the DEPARTURE_DELAY and SCHEDULE_TIME.
+3. We applied the model on dataset then to predict ARRIVAL_DELAY.
 
 ## Results
 After executing the model, we were able to find the ARRIVAL_DELAY for every flight which we then compared with the ARRIVAL_DELAY already given in our dataset and we came to know that our prediction was nearly equals to the delays already given in the dataset which means our prediction model is fairly good.
+![Image](/flight_dataLR2.png)
 
 ![First Image](/flight_data.png)
 ![Image](/flight_datacancel.png)
 ![Image](/flight_datacancel1.png)
 ![Image](/flight_datacancel2.png)
 ![Image](/flight_datacancel3.png)
-![Image](/flight_dataLR1.png)
-![Image](/flight_dataLR2.png)
+
 ![Image](/flight_dataLR3.png)
 ![Image](/flight_dataLR4.png)
 ![Image](/flight_dataLR5.png)
