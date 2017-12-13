@@ -11,11 +11,11 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
+# BACKGROUND AND MOTIVATION
 ## Header 2
 ### Header 3
 
-- Bulleted
+- Flight delays are an issue for many business and official travellers. Over the years, some airports such as Washington Dulles, DC have earned 
 - List
 
 1. Numbered
