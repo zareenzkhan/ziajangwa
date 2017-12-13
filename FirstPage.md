@@ -76,14 +76,40 @@ Accuracy on test data is 0.94
 
 ![Image](/flight_dataLR4.png)
 
+We buildup confusion matrix to identify true positive and true negative values for NOT_DELAYED flights.
+
+![Image](/flight_dataLR5.png)
+
+## Model 5
+We use **Logistic Regression Model** and **Multinomial Logistic Regression Model** to predict reason of delay and compared these models results. 
+
+## Implementation
+We have 4 different delays given in our dataset which are AIR_SYSTEM_DELAY, LATE_AIRCRAFT_DELAY, WEATHER_DELAY and AIRLINE_DELAY. by using these models, we tried to predict the delay reason for each flight.
+
+## Results
+Accuracy of Logistic Regression on training data is 0.92
+Accuracy of Logistic Regression on test data is 0.90
+
+Accuracy of Multinomial Logistic Regression on training data is 0.93
+Accuracy of Multinomial Logistic Regression on test data is 0.91
+
+![Image](/flight_datadelay.png)
+
+Following graph is showing which airline flight is delayed due to which reason.
+![Image](/flight_dataLR7.png)
+
+![Image](/flight_dataLR6.png)
+
+
+
+
+
+
 ![First Image](/flight_data.png)
 ![Image](/flight_datacancel.png)
 ![Image](/flight_datacancel1.png)
 ![Image](/flight_datacancel2.png)
 ![Image](/flight_datacancel3.png)
-![Image](/flight_dataLR5.png)
-![Image](/flight_dataLR6.png)
-![Image](/flight_dataLR7.png)
 ![Image](/flight_datarating1.png)
 ![Image](/flight_datarating2.png)
 ![Image](/flight_datarating3.png)
