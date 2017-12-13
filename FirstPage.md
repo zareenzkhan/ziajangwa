@@ -24,18 +24,18 @@ A natural cause for many delays seems to be the weather. We decided to include w
 It most of the time happens that if a flight experience any delay in its departure, it will not be able to reach timely on the destination. So we picked it up as our objective to predict the delay in arrival if the flight is delayed on departure.
 
 ## Model 1
-We use **Linear Regression Model** to do this prediction.
+We use **Linear Regression Model** to do the prediction.
 
 ## Implementation
 In this model we used SCHEDULE_TIME to predict ARRIVAL_DELAY.
 
 ## Results
-Score on training data is 0.83
-Score on test data is 0.76
+Score on training data is 0.81
+Score on test data is 0.81
 ![Image](/flight_dataLR1.png)
 
 ## Model 2
-We use **Multiple Linear Regression Model** to do this prediction.
+We use **Multiple Linear Regression Model** to do the prediction.
 
 ## Implementation
 1. We first find out the duration of flight by using two features, SCHEDULE_DEPARTURE and SCHEDULE_ARRIVAL.
@@ -44,7 +44,24 @@ We use **Multiple Linear Regression Model** to do this prediction.
 
 ## Results
 After executing the model, we were able to find the ARRIVAL_DELAY for every flight which we then compared with the ARRIVAL_DELAY already given in our dataset and we came to know that our prediction was nearly equals to the delays already given in the dataset which means our prediction model is fairly good.
+
+Score on training data is 0.8225
+Score on test data is 0.827
+
 ![Image](/flight_dataLR2.png)
+
+## Model 3
+We use **Logistic Regression Model** to do the prediction. 
+
+## Implementation
+We classified our data in this model into two categories DELAYED and NOT-DELAYED using DEPARTURE_DELAY and ARRIVAL_DELAY columns from our dataset.
+
+## Results
+Accuracy on training data is 0.96
+Accuracy on test data is 0.94
+
+![Image](/flight_dataLR4.png)
+
 
 ![First Image](/flight_data.png)
 ![Image](/flight_datacancel.png)
@@ -53,7 +70,7 @@ After executing the model, we were able to find the ARRIVAL_DELAY for every flig
 ![Image](/flight_datacancel3.png)
 
 ![Image](/flight_dataLR3.png)
-![Image](/flight_dataLR4.png)
+
 ![Image](/flight_dataLR5.png)
 ![Image](/flight_dataLR6.png)
 ![Image](/flight_dataLR7.png)
