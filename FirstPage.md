@@ -20,6 +20,27 @@ For this project, we decided to focus on the 2015. We were also able to connect 
 
 A natural cause for many delays seems to be the weather. We decided to include weather data additionally in our analysis. Therefore, we wanted to get historical weather information of the airports. Unfortunately, when it comes to weather data, we couldn't find any public available sources that provide a suitable (free) dataset. We found a dataset which was a single day data, we mold it as per our requirement. 
 
+# Exploratory Data Analysis
+
+Following graph is showing the ratio between Cancelled and Not-Cancelled flights.
+![Image](/flight_datacancel1.png)
+
+We grouped flights according to dates to find out Cancelled and Not-Cancelled flights day-wise. 
+Due to computation power issue, we have used small dataset.
+![Image](/flight_datacancel2.png)
+
+Now we mapped flights with respect to airline.
+![Image](/flight_datacancel3.png)
+
+We plot following graph to show number of flights are getting cancelled for all airlines. 
+![Image](/flight_datarating1.png)
+
+We plot following graph to show number of flights are getting delayed for all airlines. 
+![Image](/flight_datarating3.png)
+
+Following graph is showing count of all on-time flights, delay between 5 to 45 mins and above 45 mins for all the airlines.
+![Image](/flight_datarating2.png)
+
 # Prediction
 Most of the time it happens that if a flight experience any delay in its departure, it will not be able to reach timely on the destination. So we picked it up as our objective to predict the delay in arrival if the flight is delayed on departure.
 
@@ -105,12 +126,4 @@ Following graph is showing which airline flight is delayed due to which reason.
 
 
 
-![First Image](/flight_data.png)
-![Image](/flight_datacancel.png)
-![Image](/flight_datacancel1.png)
-![Image](/flight_datacancel2.png)
-![Image](/flight_datacancel3.png)
-![Image](/flight_datarating1.png)
-![Image](/flight_datarating2.png)
-![Image](/flight_datarating3.png)
-![Last Image](/Plot_1.png)
+
