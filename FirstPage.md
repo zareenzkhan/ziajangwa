@@ -1,4 +1,4 @@
- ![GitHub Logo](/header.jpg)
+![GitHub Logo](/header.jpg)
 
 # Background and Motivation
 Our project is motivated by the following facts: 
@@ -21,7 +21,7 @@ For this project, we decided to focus on the 2015. We were also able to connect 
 A natural cause for many delays seems to be the weather. We decided to include weather data additionally in our analysis. Therefore, we wanted to get historical weather information of the airports. Unfortunately, when it comes to weather data, we couldn't find any public available sources that provide a suitable (free) dataset. We found a dataset which was a single day data, we mold it as per our requirement. 
 
 # Prediction
-It most of the time happens that if a flight experience any delay in its departure, it will not be able to reach timely on the destination. So we picked it up as our objective to predict the delay in arrival if the flight is delayed on departure.
+Most of the time it happens that if a flight experience any delay in its departure, it will not be able to reach timely on the destination. So we picked it up as our objective to predict the delay in arrival if the flight is delayed on departure.
 
 ## Model 1
 We use **Linear Regression Model** to do the prediction.
@@ -32,6 +32,7 @@ In this model we used SCHEDULE_TIME to predict ARRIVAL_DELAY.
 ## Results
 Score on training data is 0.81
 Score on test data is 0.81
+
 ![Image](/flight_dataLR1.png)
 
 ## Model 2
@@ -44,9 +45,6 @@ We use **Multiple Linear Regression Model** to do the prediction.
 
 ## Results
 After executing the model, we were able to find the ARRIVAL_DELAY for every flight which we then compared with the ARRIVAL_DELAY already given in our dataset and we came to know that our prediction was nearly equals to the delays already given in the dataset which means our prediction model is fairly good.
-
-Score on training data is 0.8225
-Score on test data is 0.827
 
 ![Image](/flight_dataLR2.png)
 
@@ -62,15 +60,27 @@ Accuracy on test data is 0.94
 
 ![Image](/flight_dataLR4.png)
 
+We buildup confusion matrix to identify true positive and true negative values for NOT_DELAYED flights.
+
+![Image](/flight_dataLR3.png)
+
+## Model 4
+We use **Support Vector Machine** to do the prediction. 
+
+## Implementation
+We classified our data in this model into two categories DELAYED and NOT-DELAYED using DEPARTURE_DELAY and ARRIVAL_DELAY columns from our dataset. By implenting this model, we actually want to figure out which model's prediction is more accurate, either SVM or Logistic regression.
+
+## Results
+Accuracy on training data is 0.97
+Accuracy on test data is 0.94
+
+![Image](/flight_dataLR4.png)
 
 ![First Image](/flight_data.png)
 ![Image](/flight_datacancel.png)
 ![Image](/flight_datacancel1.png)
 ![Image](/flight_datacancel2.png)
 ![Image](/flight_datacancel3.png)
-
-![Image](/flight_dataLR3.png)
-
 ![Image](/flight_dataLR5.png)
 ![Image](/flight_dataLR6.png)
 ![Image](/flight_dataLR7.png)
